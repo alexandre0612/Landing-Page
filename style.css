@@ -1,0 +1,193 @@
+header {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("img/img.png");
+  background-size: cover;
+  background-position: center 10%;
+
+  color: #fff;
+  padding: 3rem;
+  min-height: 25rem;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  line-height: 1.6;
+
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://c.pxhere.com/photos/e8/8c/notebook_coffee_table_work_office_computer_laptop_working_space-1283308.jpg!d");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+footer {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 3rem;
+}
+
+.container h1{
+    font-family: "Inter", sans-serif;
+    font-size: 3rem;
+  
+    text-align: left;
+
+    max-width: 37.5rem;
+    display: flex;
+}
+
+.container p {
+    font-family: arial;
+    font-size: 1.5rem;   
+    flex: 1;
+}
+
+
+.main{
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(10px);    
+    
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: sticky;
+    top: 0;
+    z-index: 1000;   
+}
+
+.main ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px); 
+  padding: 0;
+}
+
+.main ul li {
+  margin: 0 1rem;
+}
+
+.main ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+main ul li a:hover {
+  color: #8b5cf6
+} 
+
+section {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);  
+  margin: 2rem auto;
+  scroll-margin-top: 3.3rem;
+  padding: 2rem;
+  max-width: 50rem;
+  border-radius: 10px;         
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+  color: #fff;
+  animation: fadeIn 1s ease-in;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.projects img{
+  height: auto;
+  width: 100%;
+  max-width: 18.7rem;
+  padding: 4px;
+  border-radius: 15px;
+}
+
+.legend {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.icons-redes {
+    display: flex;
+
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.icons-redes a {
+    width: 4rem;
+    height: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    border-radius: 1.25rem;
+
+    background-color: rgba(255,255,255,0.05);
+
+    transition: 0.3s;
+}
+
+.icons-redes i {
+    font-size: 2rem;
+
+    color: white;
+}
+
+.icons-redes a:hover {
+    transform: translateY(-8px);
+
+    background-color: rgba(139,92,246,0.2);
+
+    box-shadow: 0 0 20px rgba(139,92,246,0.35);
+}
+
+@media (max-width: 768px) {
+  header {
+    align-items: flex-end;
+  }
+
+  .container {
+    max-width: 600px;
+  }
+  .conteiner h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .conteiner p {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .icons-redes a {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .icons-redes i {
+    font-size: 1.5rem;
+  }
+
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+html {
+  scroll-behavior: smooth;
+}
